@@ -1,0 +1,10 @@
+@use '../utility/function' as f;
+
+// 1024px
+$breakpoints-up: (
+    'large': f.em(1024)
+);
+
+$breakpoints-down: (
+    'medium': f.em(1023.98)
+)

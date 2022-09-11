@@ -1,0 +1,79 @@
+@use '../base/variable' as v;
+
+.forcasts {
+    overflow: hidden;
+}
+
+.switch {
+    &__text,
+    &__bar {
+        width: 75%;
+        margin: 0 auto;        
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        color: v.$lighttext;
+        transform: translateY(-2vh);
+    }
+    &__bar {
+        border: 2px solid v.$lighttext;
+        height: 1rem;
+        border-radius: 10px;
+        transform: translateY(-1vh);
+    }
+    &__slider {
+        border-radius: 10px;
+        background-color: v.$lighttext;
+        width: calc(50% + 2px);
+        height: 1rem;
+        transform: translate(-2px, -2px);
+    }
+}
+
+.weather-icon {
+    fill: v.$lighttext;
+    
+}
+
+.mini-cast {
+    overflow: hidden;
+
+    &__wrapper {
+        display: flex;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        padding: 1rem;
+        overflow: scroll;
+    }
+
+    &__pod {
+        color: v.$lighttext;
+        border: 2px solid v.$lighttext;
+        border-radius: 40px;
+        padding: 1.3rem;
+        margin-right: 1.5rem;
+        background: v.$mini-pod-bg;
+    }
+    &__pod.active {
+        background: v.$mini-pod-bg-active;
+    }
+}
+
+.cast-slider {
+    width: 40%;
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: space-between;
+
+    &__dot {
+        height: 0.7rem;
+        width: 0.7rem;
+        border-radius: 50%;
+        background-color: v.$dot;
+    }
+    &__dot.active {
+        background-color: v.$lighttext;
+    }
+}

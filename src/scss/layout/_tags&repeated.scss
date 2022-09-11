@@ -1,0 +1,24 @@
+@use '../base/variable' as v;
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(v.$body-bg-filter v.$body-bg-filter), url('https://source.unsplash.com/twukN12EN7c/w=1920');
+    background-repeat: no;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;  
+}
+
+.dark-text {
+    color: v.$darktext;
+}
+
+.light-text{
+    color: v.$lighttext;
+}

@@ -1,0 +1,14 @@
+//@forward '../base';
+@use '../base/breakpoints' as br;
+
+@mixin breakpoint($size) {
+    @media (min-width: map-get(br.$breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get(br.$breakpoints-down, $size)) {
+        @content;
+    }
+}

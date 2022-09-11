@@ -1,0 +1,31 @@
+@use '../base/variable' as v;
+
+.header {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: v.$header-bg;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__date,
+    &__time {
+        display: inline-block
+    }
+    &__time {
+        margin-left: 0.7rem;
+    }
+}
+
+.nav {
+    &__search {
+        display: grid;
+        place-items: center;
+    }
+    &__icon {
+        display: block;
+        fill: v.$darktext;
+    }
+}

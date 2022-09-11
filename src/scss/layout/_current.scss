@@ -1,0 +1,43 @@
+@use '../utility/function' as f;
+
+.current {
+    padding-top: 1rem;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__city {
+        text-align: center;
+        font-size: 2.25rem;
+    }
+    &__temp {
+        font-size: 7rem;
+        transform: translateY(-4.5vh);
+        & span {
+            font-size: 0.4em;
+            display: inline-block;
+            transform: translateY(-1.3em);
+        }
+    }
+    &__light-text {
+        background-color: rgba(36, 32, 55, 0.7);
+        border-radius: 10px;
+        padding: 1rem 3rem;
+        transform: translateY(-5vh);
+        width: 75%;
+        max-width: 270px;
+        &>div {
+            display: flex;
+            justify-content: space-between;
+
+            & div {
+                width: 4rem;
+            }
+        }
+        &>div:not(:last-child) {
+            margin-bottom: 0.7rem;
+        }
+    }
+}
