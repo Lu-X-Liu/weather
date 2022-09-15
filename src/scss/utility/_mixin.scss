@@ -12,3 +12,9 @@
         @content;
     }
 }
+
+@mixin vertical-breakpoint($size) {
+    @media (min-height: map-get(br.$breakpoints-up, $size)) {
+        @content;
+    }
+}

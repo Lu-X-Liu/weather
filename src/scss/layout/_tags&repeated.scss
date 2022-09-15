@@ -1,13 +1,18 @@
 @use '../base/variable' as v;
 
 body {
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
     background:linear-gradient(v.$body-bg-filter v.$body-bg-filter), url('https://source.unsplash.com/twukN12EN7c/w=1920');
-    background-repeat: no;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    overflow: hidden;
+
+}
+
+.body-bg-horizontal {
+    background-size: auto;
 }
 
 .wrapper {

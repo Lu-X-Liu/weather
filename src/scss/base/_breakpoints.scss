@@ -2,9 +2,16 @@
 
 // 1024px
 $breakpoints-up: (
-    'large': f.em(1024)
+    'xsmall': f.em(400),
+    'small': f.em(576),
+    'medium': f.em(768),
+    'large': f.em(1024),
+
+    'vertical-md': f.em(736),
+    'vertical-lg': f.em(812)
 );
 
 $breakpoints-down: (
+    'small': f.em(767.98),
     'medium': f.em(1023.98)
 )
